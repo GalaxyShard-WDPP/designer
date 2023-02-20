@@ -17,8 +17,10 @@ function setActive(tab) {
 }
 for (const tab of tabs) {
     let header = tab.getElementsByClassName("tab-header")[0];
+    // only setup the event handlers because setActive automatically sets up everything else.
     header.addEventListener("click", () => {
         setActive(tab);
     });
 }
+// make sure to do this part explicitly in code because if a user has JavaScript disabled, the website will still have full functionality
 setActive(tabs[0]);
