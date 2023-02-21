@@ -52,7 +52,7 @@ body {
 
     left:0;
     right:0;
-    top:600px;
+    top:400px;
     margin:0 auto 0 auto;
 
     border:50px solid transparent;
@@ -61,6 +61,10 @@ body {
     filter:drop-shadow(0px 0px 10px black);
 
     animation: bounce-anim 0.75s ease 0s infinite alternate;
+}
+img {
+    max-width:90%;
+    height:auto;
 }
 @keyframes bounce-anim {
     0% {
